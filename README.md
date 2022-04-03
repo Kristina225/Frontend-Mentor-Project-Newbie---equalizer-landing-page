@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](.screenshots/desktop_screenshot.png)
-![](.screenshots/tablet_screenshot.png)
-![](.screenshots/mobile_screenshot.png)
+![](screenshots/desktop_screenshot.png)
+![](screenshots/tablet_screenshot.png)
+![](screenshots/mobile_screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/Kristina225/Frontend-Mentor-Project-Newbie---equalizer-landing-page
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
