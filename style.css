@@ -13,8 +13,8 @@
   --color-card-background: #fa7453;
   --color-ios-btn-hover: #66e2dc;
   --color-android-btn-hover: #ffb964;
-  --color-light-text: #fcfaf9;
-  --color-dark-text: #191826;
+  --color-light: #fcfaf9;
+  --color-dark: #191826;
 }
 
 body {
@@ -22,13 +22,12 @@ body {
   font-size: 2rem;
   font-weight: 400;
   padding: 0 3.9rem 0 3.3rem;
-  color: var(--color-dark-text);
+  color: var(--color-dark);
   background: url("assets/bg-main-desktop.png"), url("assets/bg-pattern-1.svg");
   background-size: cover, 31.2rem 46.8rem;
   background-repeat: no-repeat, no-repeat;
   background-position: top -11.2rem left -14.6rem, top -3.9rem right 0rem;
-  overflow-x: none;
-}
+  background-color: var(--color-light)
 
 main {
   width: 100%;
@@ -67,7 +66,7 @@ main {
   margin-top: 32.1rem;
   border-radius: 1.2rem;
   position: relative;
-  background: url("assets/bg-pattern-2.svg"), var(--color-dark-text);
+  background: url("assets/bg-pattern-2.svg"), var(--color-dark);
   background-size: 31.2rem 46.8rem ;
   background-position: top -4rem left 33.6rem;
   background-repeat: no-repeat;
@@ -89,7 +88,7 @@ main {
   right: 9.5rem;
   border-radius: 1.2rem;
   background-color: var(--color-card-background);
-  color: var(--color-light-text);
+  color: var(--color-light);
 }
 
 .card__title {
@@ -144,8 +143,8 @@ main {
 }
 
 .card__btn--ios {
-  color: var(--color-light-text);
-  background-color: var(--color-dark-text);
+  color: var(--color-light);
+  background-color: var(--color-dark);
 }
 
 .card__btn--ios:hover {
@@ -156,8 +155,8 @@ main {
 
 .card__btn--android {
   margin-top: 1.6rem;
-  background-color: var(--color-light-text);
-  color: var(--color-dark-text);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .card__btn--android:hover {
