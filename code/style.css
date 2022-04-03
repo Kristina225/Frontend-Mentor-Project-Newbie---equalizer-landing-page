@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+/* TODO: Adds space on right of mobile view */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-card-background: #fa7453;
+  --color-ios-btn-hover: #66e2dc;
+  --color-android-btn-hover: #ffb964;
+  --color-light-text: #fcfaf9;
+  --color-dark-text: #191826;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0 3.9rem 0 3.3rem;
+  color: var(--color-dark-text);
+  background: url("assets/bg-main-desktop.png"), url("assets/bg-pattern-1.svg");
+  background-size: cover, 31.2rem 46.8rem;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -11.2rem left -14.6rem, top -3.9rem right 0rem;
+  overflow-x: none;
+}
+
+main {
+  width: 100%;
+  max-width: 111rem;
+  margin: auto;
+}
+
+
+/* -------- Desktop Header: main title and top paragraph styles -------- */
+.header__logo {
+  margin-top: 6.2rem;
+}
+
+.heading__title {
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 8.8rem;
+  letter-spacing: -0.1rem;
+  max-width: 101.5rem;
+  margin-top: 12.7rem;
+}
+
+.heading__description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  max-width: 82.5rem;
+  margin-top: 4rem;
+}
+
+/* ------------- Desktop Midsection: card and illustration --------------- */
+
+.card-container {
+  width: 100%;
+  height: 60rem;
+  margin-top: 32.1rem;
+  border-radius: 1.2rem;
+  position: relative;
+  background: url("assets/bg-pattern-2.svg"), var(--color-dark-text);
+  background-size: 31.2rem 46.8rem ;
+  background-position: top -4rem left 33.6rem;
+  background-repeat: no-repeat;
+}
+
+.card-illustration {
+  width: 31.2rem;
+  position: absolute;
+  left: 10.2rem;
+  bottom: 17.1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 44.6rem;
+  padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+  position: absolute;
+  top: 9rem;
+  right: 9.5rem;
+  border-radius: 1.2rem;
+  background-color: var(--color-card-background);
+  color: var(--color-light-text);
+}
+
+.card__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+}
+
+.card__description {
+  font-size: 2rem;
+  line-height: 3.4rem;
+  margin-top: 2.2rem;
+}
+
+.card__price {
+  line-height: 3.2rem;
+  letter-spacing: -0.02rem;
+  margin-top: 3.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.card__price--currency {
+  font-size: 6.5rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  margin-right: 1.6rem;
+}
+
+.card__buttons {
+  margin-top: 4.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__btn {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.018rem;
+  text-decoration: none;
+  width: 100%;
+  padding: 1.5rem 0 1.4rem 0;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__btn img {
+  margin-right: 0.78rem;
+}
+
+.card__btn--ios {
+  color: var(--color-light-text);
+  background-color: var(--color-dark-text);
+}
+
+.card__btn--ios:hover {
+  cursor: pointer;
+  background-color: var(--color-ios-btn-hover);
+  transition: all 0.2s ease-in;
+}
+
+.card__btn--android {
+  margin-top: 1.6rem;
+  background-color: var(--color-light-text);
+  color: var(--color-dark-text);
+}
+
+.card__btn--android:hover {
+  cursor: pointer;
+  background-color: var(--color-android-btn-hover);
+  transition: all 0.2s linear;
+}
+
+/* --------------- Desktop Foooter: info and social media ------------ */
+.footer {
+  width: 100%;
+  margin-top: 20.2rem;
+  margin-bottom: 9.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__info {
+  display: flex;
+  align-items: flex-start;
+  gap: 13.78rem;
+}
+
+.footer__info--text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  max-width: 36.6rem;
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer__info--contact .email {
+  font-weight: 700;
+}
+
+.footer__social-media img:hover {
+    cursor: pointer;
+    filter: invert(59%) sepia(17%) saturate(2627%) hue-rotate(324deg) brightness(99%) contrast(98%);
+}
+
+
+/* --------------------------------TABLET VIEW----------------------------------- */
+@media only screen and (max-width: 850px) {
+  body {
+    font-size: 1.8rem;
+    background: url("assets/bg-main-tablet.png"), url("assets/bg-pattern-1.svg");
+    background-size: auto, 26.67rem 40rem;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -11.2rem left -25.4rem, top -3.2rem right -3.56rem;
+  }
+  
+  main {
+      max-width: 69.6rem;
+  }
+
+  /* -------- Tablet Header: main title and top paragraph styles -------- */
+  
+  .heading__title {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.073rem;
+    max-width: 52rem;
+    margin-top: 9.5rem;
+  }
+  
+  .heading__description {
+    line-height: 2.8rem;
+    max-width: 51.4rem;
+    margin-top: 2.8rem;
+  }
+  
+  /* ------------- Tablet Midsection: card and illustration --------------- */
+  
+  .card-container {
+    margin-top: 24.9rem;
+    background-size: 28rem 42rem ;
+    background-position: top -3.1rem left 22.9rem;
+  }
+  
+  .card-illustration {
+    width: 27.02rem;
+    left: 6.4rem;
+    bottom: 18.2rem;
+  }
+  
+  .card {
+    max-width: 39.9rem;
+    padding: 4.8rem 4.9rem 4.8rem 4.8rem;
+    top: 15rem;
+    right: 5.8rem;
+  }
+  
+  .card__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  
+  .card__description {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-top: 1.2rem;
+  }
+  
+  .card__price {
+    font-size: 2rem;
+    margin-top: 3.6rem;
+    margin-left: 0.6rem;
+  }
+  
+  .card__buttons {
+    margin-top: 3.2rem;
+  }
+
+  /* --------------- Tablet Foooter: info and social media ------------ */
+  
+  .footer {
+    margin-top: 18.3rem;
+    margin-bottom: 8.5rem;
+  }
+  
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.2rem;
+  }
+}
+
+/* ---------------------------------MOBILE PHONE--------------------------------- */
+
+@media only screen and (max-width: 530px) {
+  body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background: url("assets/bg-main-mobile.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top -10.4rem right -15.9rem;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 37.5rem;
+  }
+
+  /* -------- Mobile Header: main title and top paragraph styles -------- */
+
+  .header__logo {
+    margin: 4rem 0 0 2.4rem;
+  }
+  
+  .heading__title {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.045rem;
+    max-width: 32.7rem;
+    margin: 6.4rem 0 0 2.4rem;
+  }
+  
+  .heading__description {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    max-width: 32.7rem;
+    margin: 2rem 0 0 2.4rem;
+  }
+
+  /* ------------- Mobile Midsection: card and illustration --------------- */
+  
+  .card-container {
+    margin: 16.6rem 0 0 0;
+    background-size: 28rem 42rem ;
+    background-position: top 0 left 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-illustration {
+    width: 21rem;
+    height: 43rem;
+    position: static;
+    margin: 0 auto;
+    transform: translateY(-9.8rem);
+  }
+  
+  .card {
+    max-width: 100%;
+    position: static;
+    margin: -4.8rem auto 0 auto;
+    padding: 4.8rem 3.7rem 4.8rem 3.6rem;
+  }
+
+  /* --------------- Foooter: info and social media ------------ */
+  
+  .footer {
+    max-width: 32.7rem;
+    margin: 39rem 0 8.5rem 2.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6.4rem;
+  }
+
+  .footer__info--text {
+    max-width: 32.7rem;
+  }
+}
