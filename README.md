@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Kristina225/Frontend-Mentor-Project-Newbie---equalizer-landing-page
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://equalizer-landing-page-fm08.netlify.app/
 
 ## My process
 
