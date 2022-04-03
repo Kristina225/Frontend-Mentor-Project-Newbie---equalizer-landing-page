@@ -27,7 +27,9 @@ body {
   background-size: cover, 31.2rem 46.8rem;
   background-repeat: no-repeat, no-repeat;
   background-position: top -11.2rem left -14.6rem, top -3.9rem right 0rem;
-  background-color: var(--color-light)
+  overflow-x: none;
+  background-color: var(--color-light);
+}
 
 main {
   width: 100%;
@@ -211,6 +213,7 @@ main {
     background-size: auto, 26.67rem 40rem;
     background-repeat: no-repeat, no-repeat;
     background-position: top -11.2rem left -25.4rem, top -3.2rem right -3.56rem;
+    background-color: var(--color-light);
   }
   
   main {
@@ -300,6 +303,7 @@ main {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top -10.4rem right -15.9rem;
+    background-color: var(--color-light);
   }
   
   main {
